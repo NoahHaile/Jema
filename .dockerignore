@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.git
+*.png
+sample-meme.png
+samples
+assets/cache
+data
+npm-debug.log

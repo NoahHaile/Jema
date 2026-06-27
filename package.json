@@ -1,0 +1,33 @@
+{
+  "name": "basket-jema-bot",
+  "version": "1.0.0",
+  "description": "Telegram group bot for a basketball crew: native polls + AI-captioned memes",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "sample": "tsx src/sample.ts",
+    "sample:callout": "tsx src/sampleCallout.ts",
+    "schedule:check": "tsx src/scheduleCheck.ts",
+    "test:winner": "tsx src/testWinner.ts",
+    "test:receipt": "tsx src/testReceipt.ts",
+    "test:targets": "tsx src/testTargets.ts",
+    "test:split": "tsx src/testSplit.ts"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
+    "croner": "^8.1.2",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0",
+    "openai": "^4.67.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

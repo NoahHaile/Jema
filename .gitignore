@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+assets/cache/
+data/
+*.png
+sample-meme.png
+samples/
+
+# runtime logs
+*.log
