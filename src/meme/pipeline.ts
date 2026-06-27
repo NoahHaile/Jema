@@ -45,6 +45,8 @@ async function resolveFormatUrl(format: MemeFormat): Promise<string> {
 export async function buildCalloutMeme(input: {
   name: string;
   kind: CalloutKind;
+  /** Custom roast angle — overrides the random bank pick when provided. */
+  angle?: string;
 }): Promise<BuiltMeme> {
   const format = pickOne(FORMATS);
   const bank =
@@ -53,7 +55,7 @@ export async function buildCalloutMeme(input: {
       : input.kind === "pay"
         ? PAY_EXCUSES
         : ROAST_ANGLES;
-  const excuse = pickOne(bank);
+  const excuse = input.angle?.trim() || pickOne(bank);
 
   const caption = await writeCalloutCaption({
     format,

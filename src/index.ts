@@ -29,7 +29,7 @@ const HELP =
   "💸 Court cost: every 1-hour booking is split evenly. 📸 Send a SCREENSHOT (image) of your " +
   "telebirr / CBE Birr / bank receipt right here and I'll read it, confirm it, and log you as paid.\n\n" +
   "Commands:\n" +
-  "/roast @username (or reply /roast) — roast a player on demand 💀\n" +
+  "/roast @username <angle> — roast a player; add your own angle (e.g. /roast @kev his airballs) or leave it blank for a random one 💀\n" +
   "/split — the per-person cost this week.\n" +
   "/paidlist — who's paid + collection progress.\n" +
   "/here — register this group for posts.\n" +
